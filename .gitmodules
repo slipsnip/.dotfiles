@@ -1,0 +1,3 @@
+[submodule "slipmacs"]
+	path = .emacs.d
+	url = git@github.com:slipsnip/.emacs.d
