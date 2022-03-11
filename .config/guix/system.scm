@@ -1,4 +1,7 @@
-(use-modules (gnu) (nongnu packages linux)  (gnu services security-token))
+(use-modules (gnu)
+	     (nongnu packages linux)
+	     (gnu services security-token)
+	     (gnu packages lisp))
 (use-service-modules
   cups
   desktop
@@ -37,6 +40,7 @@
 	    (specification->package "libu2f-host")
 	    (specification->package "libfido2")
             (specification->package "nss-certs"))
+      (list sbcl stumpwm `(,stumpwm "lib") sbcl-stumpwm-ttf-fonts sbcl-stumpwm-pass font-dejavu)
       %base-packages))
   (services
     (append
