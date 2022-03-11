@@ -29,6 +29,7 @@ fi
 alias ls='ls -p --color=auto'
 alias ll='ls -l'
 alias grep='grep --color=auto'
+
 PATH=$PATH:$HOME/.config/guix/current/bin/:$HOME/.config/guix/bin
 GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
