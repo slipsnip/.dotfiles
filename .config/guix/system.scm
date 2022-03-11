@@ -8,6 +8,7 @@
   networking
   ssh
   xorg)
+(use-package-modules wm fonts)
 
 (define %slip-fido2-rule
   (udev-rule
