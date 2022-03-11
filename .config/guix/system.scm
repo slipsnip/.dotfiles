@@ -20,7 +20,7 @@
  (firmware (list linux-firmware))
   (locale "en_CA.utf8")
   (timezone "America/Toronto")
-  (keyboard-layout (keyboard-layout "us" #:options '("ctrl:swapcaps")))
+  (keyboard-layout (keyboard-layout "us,ru" #:options '("ctrl:swapcaps" "grp:alt_shift_toggle")))
   (host-name "guix")
   (users (cons* (user-account
                   (name "slip")
